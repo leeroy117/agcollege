@@ -1,0 +1,7 @@
+<app-title [title]="salesListTitle"></app-title>
+<div class="row d-flex justify-content-end mr-5 mb-3">
+    <a mat-raised-button color="primary" [routerLink]="['/ventas']" routerLinkActive="router-link-active">Nueva
+        venta</a>
+</div>
+
+<app-table [headers]="salesHeaders" [data]="sales"></app-table>

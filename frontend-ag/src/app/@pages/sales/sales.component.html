@@ -1,0 +1,23 @@
+<app-title [title]="salesTitle"></app-title>
+
+<div class="col-sm-12 col-lg-6">
+    <label for="customer">Cliente:</label>
+    <br>
+    <div class="row ml-1">
+        <input type="text" class="form-control col-lg-7" id="customer" placeholder="Selecciona un cliente ->" readonly>
+        <app-modal [titleButton]="titleCustomerButton"></app-modal>
+    </div>
+</div>
+<br>
+<div class="col-sm-12 col-lg-6">
+    <label for="product">Producto:</label>
+    <br>
+    <div class="row ml-1">
+        <app-modal [data]="products" [titleButton]="titleProductButton"></app-modal>
+
+    </div>
+</div>
+<br>
+<div class="row ml-4">
+    <button mat-raised-button color="warn" (click)="openDialog()">Cancelar venta</button>
+</div>

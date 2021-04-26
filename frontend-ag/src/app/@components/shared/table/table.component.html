@@ -1,0 +1,14 @@
+<table class="table">
+    <thead>
+        <div></div>
+        <tr>
+            <th *ngFor="let header of headers" scope="col">{{ header }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of data">
+            <td *ngFor="let list of item | keys " scope="row">{{ item[list] }}</td>
+        </tr>
+    </tbody>
+    <!-- <app-pagination></app-pagination> -->
+</table>

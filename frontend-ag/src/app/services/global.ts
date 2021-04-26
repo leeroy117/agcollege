@@ -1,0 +1,1 @@
+export const Global = { apiUrl: 'http://localhost:8000/' };
